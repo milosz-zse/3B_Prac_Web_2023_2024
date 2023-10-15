@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styl_1.css">
+    <title>Malarz</title>
+</head>
+<body>
+    <div id="baner">
+        <a > <h1> Malowanie pokoi i biur</h1> </a>
+     </div>
+     <div id="lewy">
+        <h3>Menu</h3>
+       
+         <ul start="n">
+             <li><a href="mieszamy.html">  mieszamy </a></li>
+             <li><a href="cena.html">  Wyceniamy </a></li>
+          
+             </ul>
+         <br>          
+     </div>
+     <div id="srodkowy">
+        <h2> Zapotrzebowanie na farbę</h2>
+        Powierzchnia  malowania  (m2): <form><input type="number" id="liczby"><br>
+        <input type="button" value="Policz" onclick="oblicz();"></form>
+        <p id="wynik"></p>
+     </div>
+     <div id="prawy">
+         Strona poświęcona malarstwu: <br> 
+         <img src="obraz.png" alt="abstrakcja" id="obraz" height="200px">
+     </div>
+     <div id="stopka">
+         MALARZ<br>
+         Stronę opracował:MiłoszMICHTA
+     </div>
+</body>
+</html>
+
+   
+  
+   
+    <script>
+        function oblicz()
+        {
+            liczba  = document.getElementById("liczby").value;
+            reszta=liczba%4;
+            
+            odp=liczba/4;
+            if(reszta!=0)
+            {
+                odp=Math.ceil(odp)
+            }
+            document.getElementById("wynik").innerHTML= "Liczba potrzebnych puszek:"+odp;    
+        }
+    </script>
