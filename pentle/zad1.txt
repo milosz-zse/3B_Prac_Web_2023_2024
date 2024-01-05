@@ -1,0 +1,3 @@
+Pentle w programowaniu to naprawde niezwykle nazencdzie . POzwala wykonywac  powtarzalne  operacje oszczedzajac czas i powtarzalnosc kodu . Umozliwai latwe przetwarzanie danyc hw tablicach listach i innych obiektach.
+Dzieki nim mozna rowniez tworzyc  dynamiczne aplikacje osugujace zmian y w ilosci operacji .
+Sa nie odzowne przy automatyzacji i iteracyjnym przetwarzaniu danych.
