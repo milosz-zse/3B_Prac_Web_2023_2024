@@ -1,0 +1,2 @@
+zad 2 http://localhost/zadanieeee/zad2php.php?na=Mi%C5%82osz&im=MIchta
+zad 3 http://localhost/zadanieeee/zad3php.php

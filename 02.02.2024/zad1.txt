@@ -1,0 +1,4 @@
+get plusy:morzna stosowac podczas prostych formularzy
+wady : nie jest bezpieczny
+post zalety : jest bardziej bezpieczny 
+wady: niszsza wydajność 
