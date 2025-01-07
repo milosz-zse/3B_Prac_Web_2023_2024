@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Użytkowników</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f0f0f0;
+      }
+      input {
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista Użytkowników</h1>
+
+    <h2>Dodaj Użytkownika</h2>
+    <input type="text" id="addName" placeholder="Imię i Nazwisko" />
+    <input type="email" id="addEmail" placeholder="Email" />
+    <input type="number" id="addAge" placeholder="Wiek" />
+    <button id="add-btn" onclick="addUser()">Dodaj Użytkownika</button>
+
+    <h2>Edytuj Użytkownika</h2>
+    <input type="number" id="editId" placeholder="ID użytkownika" />
+    <input type="text" id="editName" placeholder="Nowe Imię i Nazwisko" />
+    <input type="email" id="editEmail" placeholder="Nowy Email" />
+    <input type="number" id="editAge" placeholder="Nowy Wiek" />
+    <button id="edit-btn" onclick="editUser()">Edytuj Użytkownika</button>
+
+    <h2>Usuń Użytkownika</h2>
+    <input type="number" id="deleteId" placeholder="ID użytkownika" />
+    <button id="delete-btn" onclick="deleteUser()">Usuń Użytkownika</button>
+
+    <table id="users-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Imię i Nazwisko</th>
+          <th>Email</th>
+          <th>Wiek</th>
+        </tr>
+      </thead>
+      <tbody id="users-tbody"></tbody>
+    </table>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
